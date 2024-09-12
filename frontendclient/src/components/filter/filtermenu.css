@@ -1,0 +1,90 @@
+.App {
+    position: relative; /* Position container relative for absolute children */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hide any overflow from absolute positioning */
+  }
+  
+  .navbar {
+    position: absolute; /* Position navbar on top of other content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    z-index: 20; /* Ensure it is above the slider */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .slider {
+    flex: 1; /* Allow slider to take up available space */
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .large-card {
+    position: absolute; /* Position it absolutely to place it over other content */
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the card */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1200px;
+    z-index: 10; /* Ensure it’s on top of the additional card */
+  }
+  
+  .additional-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the card and provide vertical spacing */
+  }
+  
+  .input-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow inputs to wrap */
+    gap: 10px; /* Space between the inputs */
+    width: 100%; /* Make the row take up the full width */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+  
+  .input-box {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and base width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center; /* Center the button horizontally */
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

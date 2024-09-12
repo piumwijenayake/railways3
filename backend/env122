@@ -1,0 +1,2 @@
+MONGO_URI="mongodb+srv://lihinisupunikaw:lWW1RF07nPD5csOg@cluster0.j7swb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+JWT_SECRET="2DPl6RFOYBopiKkYG8iywFVBTKwCjUIV"
